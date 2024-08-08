@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora 9</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="title">Calculadora 9</h2>
+        <h2>Escolha sua viagem:</h2>
+        <div class="radio-group">
+            <div>
+                <input type="radio" id="nyc" name="hours-type" value="36164" checked>
+                <label for="nyc"><b>Intercâmbio NYC </b>- 1 mês - R$ 36.164,00 </label>
+            </div>
+            <div>
+                <input type="radio" id="paris" name="hours-type" value="26770">
+                <label for="paris"><b>Férias em Paris</b> - 10 diárias - R$ 26.770,00</label>
+            </div>
+            <div>
+                <input type="radio" id="disney" name="hours-type" value="39586">
+                <label for="disney"><b>Disney</b> - 10 diárias - R$ 39.586,00</label>
+            </div>
+            <div>
+                <input type="radio" id="jeri" name="hours-type" value="14203">
+                <label for="jeri"><b>Jericoacoara </b>- 7 diárias - R$ 14.203,00</label>
+            </div>
+        </div>
+
+        <h2>Valor da hora de trabalho (R$/h)</h2>
+        <input type="number" id="value-hour-day" placeholder="Digite o valor da sua hora de trabalho" required>
+
+        <h2>Quantidade de horas trabalhadas por dia (h/dia)</h2>
+        <input type="number" id="hours-per-day" placeholder="Digite o valor de horas de trabalho por dia" required>
+
+        <h2>Quando será paga a viagem (meses) </h2>
+        <input type="number" id="mounths" placeholder="Digite o número de meses para pagar" required>
+
+        </select>
+
+        <button onclick="calculate()">Calcular</button>
+
+        <div class="results">
+
+            <p>Valor necessário para guardar por dia (R$/dia)</p>
+            <div id="value-needed">0</div>
+
+            <p>Porcentagem do salário diário que seria guardado:</p>
+            <div id="percentage-needed">0%</div>
+        </div>
+
+        <div id="is-not-possible"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
