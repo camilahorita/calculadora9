@@ -1,7 +1,7 @@
 function calculate() {
   // Pegar o valor da viagem selecionada
-  const selectedTrip = document.querySelector('input[name="hours-type"]:checked').value;
-  const tripCost = parseFloat(selectedTrip);
+  const selectedTrip = document.getElementById('value-trip');
+  const tripCost = parseFloat(selectedTrip.value);
 
   // Pegar o valor da hora de trabalho
   const hourlyRateInput = document.getElementById('value-hour-day');
@@ -47,6 +47,3 @@ function calculate() {
   document.getElementById('value-needed').innerText = dailySavingsRequired.toFixed(2);
   document.getElementById('percentage-needed').innerText = percentageOfSalary.toFixed(2) + '%';
 }
-
-
-
