@@ -110,3 +110,10 @@ button:hover {
   border: 1px solid #c0392b;
 }
 
+#mensagemErro {
+  color: red;
+  margin-top: 15px;
+  display: none;
+  text-align: center;
+  font-weight: bold;
+}
