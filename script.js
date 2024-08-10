@@ -19,8 +19,10 @@ function calculate() {
 
   // Verificar se os valores são válidos
   if (isNaN(tripCost) || isNaN(hourlyRate) || hourlyRate <= 0 || isNaN(hoursPerDay) || hoursPerDay <= 0) {
-      alert('Por favor, insira valores válidos.');
+      mensagemErro.style.display = 'block';
       return;
+} else {
+    mensagemErro.style.display = 'none';
   }
 
   // Calcular quantas horas por dia são necessárias para pagar a viagem no período selecionado
